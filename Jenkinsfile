@@ -11,4 +11,3 @@ pipeline {
     }
 }
 
-#comment to trigger pipeline
