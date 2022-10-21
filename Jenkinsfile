@@ -19,6 +19,12 @@ pipeline {
         }
         }
         }
+        stage('Docker build and push') {
+            steps {
+              sh 'printenv'
+              sh 'docker build -t shubhendu0502/numeric-app:""GIT_COMMIT"" . '
+              sh 'docker push shubhendu0502/numeric-app:""GIT_COMMIT""'
+            }
+        }
     }
 }
-
